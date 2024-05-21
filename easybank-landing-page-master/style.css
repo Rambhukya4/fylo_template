@@ -1,0 +1,405 @@
+
+
+body{
+   
+    
+    background-color: white;
+   margin-right: 100px;
+    margin: 0;
+    padding: 0;
+   overflow-x: hidden;
+   font-size:18px;
+    
+   
+}
+.nav-container{
+
+   margin-top: 0;
+   background-color: white;
+   height: 70px;
+   position: fixed;
+    padding-top: 15px;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.navig{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+ul li{
+   margin-right: 25px;
+}
+a{
+    color:gray;
+}
+.nav-container a:hover{
+    color: black;
+    padding-bottom: 26px;
+   border-bottom: 4px solid  hsl(192, 70%, 51%)
+  
+}
+ button{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(70deg,hsl(110, 65%, 60%), hsl(192, 70%, 51%));
+    border: none;
+    border-radius: 20px;
+    
+}
+.nav-container button{
+    position: relative;
+    right: 160px;
+}
+.logo-mb{
+    position: relative;
+    left: 160px;
+}
+.bg-mobile{
+    display: none;
+    
+}
+
+.nextgen-container{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    left: 170px;
+}
+.bg-desktop{
+    position: relative;
+}
+.mobile{
+    width: 680px;
+    height: auto;
+    position: relative;
+    right: 45px;
+  
+}
+.bg-active{
+    width: 1100px;
+    height: auto;
+    position: absolute;
+    z-index: -4;
+    left:-180px;
+    top: -120px;
+}
+
+.easy-bank{
+    padding-top: 50px;
+    padding-left: 160px;
+}
+.bank-container{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+    
+    margin-top: 80px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+.bank-content{
+    display: flex;
+    justify-content: space-evenly;
+   margin-left: 60px;
+   margin-top: 20px;
+   font-size: 12px;
+}
+.bank-content img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.bank-content h5{
+    margin-bottom: 15px;
+}
+.articles{
+    padding-left: 150px;
+}
+.articles h3{
+    margin-bottom: 40px;
+}
+.articles-container{
+    display: flex;
+}
+.articles-container img{
+    width: 250px;
+    height: 180px;
+   
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+.articles-container h6{
+    font-size: 10px;
+   margin-top: 20px;
+   margin-left: 40px;
+}
+.articles-container h5{
+    
+    font-size: 16px;
+    margin-left: 40px;
+}
+.articles-container p{
+    font-size: 12px;
+   
+    margin-left: 40px;
+}
+.articles-container h5:hover{
+    color: hsl(136, 65%, 51%);
+}
+
+
+.footer-container1{
+    
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background-color: hsl(233, 26%, 24%);
+}
+.content-1{
+    display: flex;
+    flex-direction: column;
+}
+.foot-logo img{
+    margin-left: 30px;
+    background-color: white;
+    margin-bottom: 40px;
+   
+}
+.social-media{
+    display: flex;
+}
+.footer-container1 ul li:hover{
+    color: hsl(136, 65%, 51%);
+}
+.social-media li a img:hover{
+    background-color: hsl(136, 65%, 51%);
+    color:hsl(136, 65%, 51%);
+}
+.btn-content{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.btn-content p{
+    font-size: 12px;
+    color: gray;
+}
+.btn-content button{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.card{
+   
+    margin-right: 20px;
+    margin-bottom: 80px;
+    box-shadow: 0 0 5px gray;
+    border: none;
+}
+
+
+
+
+/* media quaries for screen 375px */
+@media screen and (max-width:375px){
+    p{
+        font-size: 14px;
+    }
+    body{
+       
+        margin: 0;
+        padding: 0;
+       
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .nav-container {
+        display: none;
+    }
+    .navig{
+        box-sizing: border-box;
+        display: flex;
+       
+        justify-content: space-between;
+        position: relative;
+        background-color: white;
+        z-index: 1;
+    }
+    .navig img {
+        box-sizing: border-box;
+        padding: 30px;
+        z-index: 5;
+    }
+    
+    /* 2nd division mobile image with background */
+    .bg-active{
+        display: none;
+    }
+    .nextgen-container{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        left: 150px;
+        top:-10px;
+        padding-bottom: 100px;
+    }
+    
+    .nextgen-container .bg-mobile{
+        display:block;
+        width: 430px;
+        height: auto;
+        position:relative;
+        top: 580px;
+        left:-180px;
+        z-index: -4;
+
+    }
+    .nextgen-container .mobile{
+        text-align: center;
+        width: 375px;
+        height: auto;
+        position: relative;
+        top:110px;
+        left: -120px;
+        z-index: -3;
+       
+
+    }
+    .nextgen-container .text-containt{
+       position: relative;
+       top: 130px;
+       font-size: 14px;
+       right: 130px;
+       text-align: center
+     
+    }
+    .nextgen-container button{
+        position: relative;
+        right: 20px;
+    }
+    .bank-container{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      
+      
+    }
+    .bank-container .easy-bank{
+        text-align: center;
+        position: relative;
+        font-size: 14px;
+        left: -90px;
+    }
+    .easy-bank p{
+        position: relative;
+        left: 10px;
+    }
+    .bank-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        right:20px;
+        padding-bottom: 20px;
+    }
+    .bank-content img{
+        position: relative;
+        right: 20px;
+    }
+    .bank-content p{
+        padding-bottom: 20px;
+    }
+
+    
+    
+    .articles h3{
+      position: relative;
+      right: 50px;
+
+    }
+    .articles-container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 80px;
+    }
+    
+    .card{
+        width: 300px;
+        position: relative;
+        right: 35px;
+        text-align: center;
+    }
+    .card img{
+        width: 300px;
+    }
+    .card h6, h5, p{
+        text-align: center;
+        position: relative;
+        right: 20px;
+    }
+    footer{
+        height: 500px;
+       
+        background-color:  hsl(233, 26%, 24%);
+        text-align: center;
+        position: relative;
+        
+        
+    }
+    .footer-container1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 10px;
+    }
+    .foot-logo{
+        padding-top: 40px;
+    }
+    .social-media{
+        position: relative;
+        
+
+
+    }
+    .f-content2{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-content button{
+        position: relative;
+        right: 10px;
+    }
+    .btn-content p{
+    position: relative;
+    left: 5px;
+    }
+
+}
+    
+
